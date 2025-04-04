@@ -1,0 +1,43 @@
+.card-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.card {
+    width: 15rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.stars {
+    display: flex;
+    gap: 0.2rem;
+    color: #fbbf24;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fbbf24;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
