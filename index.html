@@ -9,7 +9,7 @@
     <!-- tailwind css and daisyui  -->
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 
 </head>
 
@@ -19,7 +19,7 @@
     <section>
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-                <img src="/images/logo.png" class="h-10 w-42" />
+                <img src="./images/logo.png" class="h-10 w-42" />
             </div>
 
             <div class="navbar-end">
@@ -71,7 +71,7 @@
             class='w-full md:w-[90%] lg:w-full mx-auto max-w-7xl flex flex-col gap-5 justify-center items-center md:flex-row my-20'>
 
             <div class="mx-auto">
-                <img src="/images/yoga.png" alt=""
+                <img src="./images/yoga.png" alt=""
                     class="bg-[#A8E8C3] rounded-3xl mx-auto w-[80%] md:w-[70%] lg:w-[90%]" />
             </div>
 
@@ -93,7 +93,7 @@
             class='w-full md:w-[90%] lg:w-full mx-auto max-w-7xl flex flex-col gap-5 justify-center items-center md:flex-row-reverse my-20'>
 
             <div class="mx-auto">
-                <img src="/images/parents.png" alt=""
+                <img src="./images/parents.png" alt=""
                     class="bg-[#AEEEEE] rounded-3xl mx-auto w-[80%] md:w-[70%] lg:w-[90%]" />
             </div>
 
@@ -115,7 +115,7 @@
             class='w-full md:w-[90%] lg:w-full mx-auto max-w-7xl flex flex-col gap-5 justify-center items-center md:flex-row my-20'>
 
             <div class="mx-auto">
-                <img src="/images/food.png" alt=""
+                <img src="./images/food.png" alt=""
                     class="bg-[#FAEBD7] rounded-3xl mx-auto w-[80%] md:w-[70%] lg:w-[90%]" />
             </div>
 
@@ -157,6 +157,7 @@
         <button class="arrow-button arrow-left btn p-10 text-xl" onclick="scrollCards(-1)">&lt;</button>
         <button class="arrow-button arrow-right btn p-10 text-xl" onclick="scrollCards(1)">&gt;</button>
     </section>
+    
 
     <div class="my-5 md:my-10 flex justify-center">
         <button
@@ -171,57 +172,9 @@
         </aside>
       </footer>
 
-    <!-- javascript -->
-    <script>
-        const cardContainer = document.getElementById("cardContainer");
-        const initialCards = [
-            { title: "Card 1", description: "This is the first card." },
-            { title: "Card 2", description: "This is the second card." },
-            { title: "Card 3", description: "This is the third card." },
-            { title: "Card 4", description: "This is the fourth card." },
-            { title: "Card 5", description: "This is the fifth card." },
-            { title: "Card 6", description: "This is the sixth card." },
-            { title: "Card 7", description: "This is the seventh card." }
-        ];
-
-        function createCard(title, description) {
-            return `<div class="card text-center">
-                <div class="stars text-3xl justify-center">
-                    ★★★★★
-                </div>
-                <h2 class="text-xl font-bold">${title}</h2>
-                <p class="text-lg text-gray-600">${description}</p>
-            </div>`;
-        }
-
-        function loadMoreCards() {
-            initialCards.forEach(card => {
-                cardContainer.innerHTML += createCard(card.title, card.description);
-            });
-        }
-
-        function scrollCards(direction) {
-            const cardWidth = cardContainer.querySelector(".card").offsetWidth + 16; // card width + gap
-            cardContainer.scrollBy({
-                left: direction * cardWidth,
-                behavior: "smooth"
-            });
-        }
-
-        // Load the initial set of cards
-        loadMoreCards();
-
-        // Infinite scroll functionality when reaching the end
-        cardContainer.addEventListener("scroll", () => {
-            if (cardContainer.scrollLeft + cardContainer.clientWidth >= cardContainer.scrollWidth) {
-                loadMoreCards();
-            }
-        });
-    </script>
-
-
-
-
+   
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <script src="/script.js"></script>
 </body>
 
 </html>
