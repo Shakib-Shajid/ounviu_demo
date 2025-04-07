@@ -9,13 +9,15 @@
 }
 
 .card {
-    width: 15rem;
+    width: 18rem;
     background-color: #fff;
     padding: 1rem;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
+    overflow: visible;
+    white-space: normal;
 }
 
 .stars {
@@ -41,3 +43,4 @@
 .arrow-right {
     right: 0;
 }
+

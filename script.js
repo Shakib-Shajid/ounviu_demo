@@ -1,22 +1,22 @@
 const cardContainer = document.getElementById("cardContainer");
 const initialCards = [
-    { title: "Card 1", description: "This is the first card." },
-    { title: "Card 2", description: "This is the second card." },
-    { title: "Card 3", description: "This is the third card." },
-    { title: "Card 4", description: "This is the fourth card." },
-    { title: "Card 5", description: "This is the fifth card." },
-    { title: "Card 6", description: "This is the sixth card." },
-    { title: "Card 7", description: "This is the seventh card." }
+    { title: " James M.", description: "\"Ounviu helped me establish a daily routine for better mental and physical health. It’s simple, quick, and really motivates me!\"" },
+    { title: " Laura Davies", description: "\"I love how easy it is to find healthy meal ideas and quick exercise tips. Ounviu keeps me on track every day.\"" },
+    { title: " Robert Taylor", description: "\"The community and expert insights on Ounviu are fantastic. I’ve learned practical ways to reduce stress and stay active!\"" },
+    { title: " James M.", description: "\"Ounviu helped me establish a daily routine for better mental and physical health. It’s simple, quick, and really motivates me!\"" },
+    { title: " Laura Davies", description: "\"I love how easy it is to find healthy meal ideas and quick exercise tips. Ounviu keeps me on track every day.\"" },
+    { title: " Robert Taylor", description: "\"The community and expert insights on Ounviu are fantastic. I’ve learned practical ways to reduce stress and stay active!\"" },
+    { title: " James M.", description: "\"Ounviu helped me establish a daily routine for better mental and physical health. It’s simple, quick, and really motivates me!\"" }
 ];
 
 function createCard(title, description) {
-    return `<div class="card text-center">
-        <div class="stars text-3xl justify-center">
-            ★★★★★
-        </div>
-        <h2 class="text-xl font-bold">${title}</h2>
-        <p class="text-lg text-gray-600">${description}</p>
-    </div>`;
+    return `
+    <div class="card text-center h-60 p-4 flex flex-col justify-start overflow-hidden">
+        <div class="stars text-4xl mb-2 justify-center">★★★★★</div>
+        <h2 class="text-xl font-bold mb-2">${title}</h2>
+        <p class="text-lg text-gray-600 overflow-auto flex-grow">${description}</p>
+    </div>
+    `;
 }
 
 function loadMoreCards() {
