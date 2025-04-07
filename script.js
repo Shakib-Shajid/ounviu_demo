@@ -11,7 +11,7 @@ const initialCards = [
 
 function createCard(title, description) {
     return `
-    <div class="card text-center h-60 p-4 flex flex-col justify-start overflow-hidden">
+    <div class="card text-center h-68 p-4 flex flex-col justify-start overflow-hidden">
         <div class="stars text-4xl mb-2 justify-center">★★★★★</div>
         <h2 class="text-xl font-bold mb-2">${title}</h2>
         <p class="text-lg text-gray-600 overflow-auto flex-grow">${description}</p>

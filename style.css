@@ -1,3 +1,8 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .card-container {
     display: flex;
     gap: 1rem;
@@ -43,4 +48,3 @@
 .arrow-right {
     right: 0;
 }
-
